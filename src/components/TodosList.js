@@ -18,7 +18,7 @@ TodoList.propTypes = {
 };
 
 TodoList.defaultProps = {
-  todos: '',
+  todos: [],
 };
 
 export default TodoList;

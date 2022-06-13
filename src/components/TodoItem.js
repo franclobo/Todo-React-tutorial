@@ -11,7 +11,7 @@ TodoItem.propTypes = {
 };
 
 TodoItem.defaultProps = {
-  todo: '',
+  todo: {},
 };
 
 export default TodoItem;
