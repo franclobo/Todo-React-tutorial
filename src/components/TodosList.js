@@ -14,7 +14,7 @@ function TodoList(props) {
 }
 
 TodoList.propTypes = {
-  todos: PropTypes.array,
+  todos: PropTypes.shape([]),
 };
 
 TodoList.defaultProps = {
