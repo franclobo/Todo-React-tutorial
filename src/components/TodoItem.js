@@ -7,7 +7,7 @@ function TodoItem(props) {
 }
 
 TodoItem.propTypes = {
-  todo: PropTypes.shape({}),
+  todo: PropTypes.oneOfType([PropTypes.object]),
 };
 
 TodoItem.defaultProps = {
