@@ -1,12 +1,31 @@
 import React from 'react';
+import TodoList from './TodosList'
 
 class TodoContainer extends React.Component {
+  state = {
+    todos: [
+      {
+        id: 1,
+        title: "Setup development enviroment",
+        cpmpleted: true
+      },
+      {
+        id: 2,
+        title: "Develop website and add content",
+        cpmpleted: true
+      },
+      {
+        id: 3,
+        title: "Deploy the live server",
+        cpmpleted: true
+      }
+    ]
+  };
   render() {
     return (
-      <React.Fragment>
-        <h1>Hello from Create React App</h1>
-        <p>I am in a React Component!</p>
-      </React.Fragment>
+      <div>
+        <TodoList todos={this.state.todos} />
+      </div>
     );
   }
 }
