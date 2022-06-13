@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoList from './TodosList'
+import TodoList from './TodosList';
 import Header from './Header';
 
 class TodoContainer extends React.Component {
@@ -7,21 +7,22 @@ class TodoContainer extends React.Component {
     todos: [
       {
         id: 1,
-        title: "Setup development enviroment",
-        completed: true
+        title: 'Setup development enviroment',
+        completed: true,
       },
       {
         id: 2,
-        title: "Develop website and add content",
-        completed: false
+        title: 'Develop website and add content',
+        completed: false,
       },
       {
         id: 3,
-        title: "Deploy the live server",
-        completed: false
-      }
-    ]
+        title: 'Deploy the live server',
+        completed: false,
+      },
+    ],
   };
+
   render() {
     return (
       <div>
