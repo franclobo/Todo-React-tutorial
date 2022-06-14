@@ -30,7 +30,7 @@ class InputTodo extends Component {
       }
     };
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-container">
         <input
           type="text"
           placeholder="Add Todo..."
@@ -38,7 +38,7 @@ class InputTodo extends Component {
           name="title"
           onChange={this.onChange}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="input.submit">Submit</button>
       </form>
     );
   }
