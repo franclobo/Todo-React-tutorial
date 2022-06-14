@@ -4,8 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
-import About from '../Abaut';
-import NotMatch from '../NotMatch';
+import About from '../pages/About';
+import NotMatch from '../pages/NoMatch';
 
 function TodoContainer() {
   function getInitialTodos() {
