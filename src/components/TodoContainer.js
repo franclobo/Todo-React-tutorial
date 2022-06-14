@@ -77,7 +77,7 @@ function TodoContainer() {
   }, [todos]);
 
   return (
-    <>
+    <Switch>
       <Route exact path="/">
         <div className="container">
           <div className="inner">
@@ -98,7 +98,7 @@ function TodoContainer() {
       <Route path="*">
         <NotMatch />
       </Route>
-    </>
+    </Switch>
   );
 }
 
