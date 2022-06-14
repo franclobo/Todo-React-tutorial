@@ -81,26 +81,32 @@ function TodoContainer() {
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/">
-          <div className="container">
-            <div className="inner">
-              <Header />
-              <InputTodo addTodoProps={addTodoItem} />
-              <TodosList
-                todos={todos}
-                handleChangeProps={handleChange}
-                deleteTodoProps={delTodo}
-                setUpdate={setUpdate}
-              />
+        <Route
+          exact
+          path="/"
+          element={(
+            <div className="container">
+              <div className="inner">
+                <Header />
+                <InputTodo addTodoProps={addTodoItem} />
+                <TodosList
+                  todos={todos}
+                  handleChangeProps={handleChange}
+                  deleteTodoProps={delTodo}
+                  setUpdate={setUpdate}
+                />
+              </div>
             </div>
-          </div>
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="*">
-          <NotMatch />
-        </Route>
+)}
+        />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="*"
+          element={<NotMatch />}
+        />
       </Routes>
     </>
   );
