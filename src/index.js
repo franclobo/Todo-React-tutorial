@@ -6,9 +6,14 @@ import TodoContainer from './components/TodoContainer';
 // stylessheet.
 import './App.css';
 
+// React-router.
+import { BrowserRouter as Router } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TodoContainer />
+    <Router>
+      <TodoContainer />
+    </Router>
   </React.StrictMode>,
 );
