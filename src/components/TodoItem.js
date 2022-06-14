@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function TodoItem(props) {
-  const { todo, handlechangeprops } = props;
+  const { todo, handleChangeProps } = props;
   return (
     <li>
       <input
         type="checkbox"
         checked={todo.completed}
-        handlechangeprops={handlechangeprops}
+        onChange={() => handleChangeProps(todo.id)}
       />
       {todo.title}
     </li>
@@ -17,12 +17,12 @@ function TodoItem(props) {
 
 TodoItem.propTypes = {
   todo: PropTypes.oneOfType([PropTypes.object]),
-  handlechangeprops: PropTypes.string,
+  handleChangeProps: PropTypes.oneOfType([PropTypes.func]),
 };
 
 TodoItem.defaultProps = {
   todo: {},
-  handlechangeprops: '',
+  handleChangeProps: '',
 };
 
 export default TodoItem;
