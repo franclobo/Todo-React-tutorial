@@ -25,6 +25,10 @@ class TodoContainer extends React.Component {
         },
       ],
     };
+
+    this.handleChange = () => {
+      console.log('clicked');
+    };
   }
 
   render() {
@@ -32,7 +36,7 @@ class TodoContainer extends React.Component {
     return (
       <div>
         <Header />
-        <TodoList todos={todos} />
+        <TodoList todos={todos} handlechangeprops={this.handleChange} />
       </div>
     );
   }

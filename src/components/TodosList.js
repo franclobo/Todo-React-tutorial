@@ -14,11 +14,7 @@ function TodoList(props) {
 }
 
 TodoList.propTypes = {
-  todos: PropTypes.shape([]),
-};
-
-TodoList.defaultProps = {
-  todos: [],
+  todos: PropTypes.oneOfType([PropTypes.array]).isRequired,
 };
 
 export default TodoList;
