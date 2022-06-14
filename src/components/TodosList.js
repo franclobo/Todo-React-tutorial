@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TodoItem from './TodoItem';
 
-function TodoList(props) {
+function TodosList(props) {
   const {
     todos, handleChangeProps, deleteTodoProps, setUpdate,
   } = props;
@@ -21,16 +21,16 @@ function TodoList(props) {
   );
 }
 
-TodoList.propTypes = {
+TodosList.propTypes = {
   todos: PropTypes.oneOfType([PropTypes.array]).isRequired,
   handleChangeProps: PropTypes.func,
   deleteTodoProps: PropTypes.func,
   setUpdate: PropTypes.func.isRequired,
 };
 
-TodoList.defaultProps = {
+TodosList.defaultProps = {
   handleChangeProps: '',
   deleteTodoProps: '',
 };
 
-export default TodoList;
+export default TodosList;
