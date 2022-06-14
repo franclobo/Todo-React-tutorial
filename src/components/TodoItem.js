@@ -10,6 +10,10 @@ class TodoItem extends React.Component {
     };
   }
 
+  componentWillUnmount() {
+    console.log('Cleaning up...');
+  }
+
   render() {
     const {
       todo, handleChangeProps, deleteTodoProps, setUpdate,
